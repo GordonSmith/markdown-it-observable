@@ -1,4 +1,4 @@
-# markdown-it-plugin-template
+# markdown-it-observable
 
 This repository provides a template for creating plugins for [markdown-it](https://github.com/markdown-it/markdown-it), a popular Markdown parser for JavaScript.
 

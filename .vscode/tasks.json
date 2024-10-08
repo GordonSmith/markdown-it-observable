@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dev",
+            "detail": "Run the development server",
+            "type": "shell",
+            "command": "npm run dev",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "group": "group-build"
+            }
+        },
+        {
+            "label": "dev-docs",
+            "detail": "Run the development server for documentation",
+            "type": "shell",
+            "command": "npm run dev-docs",
+            "problemMatcher": [],
+            "isBackground": true,
+            "presentation": {
+                "group": "group-build"
+            }
+        },
+        {
+            "label": "build",
+            "dependsOn": [
+                "dev",
+                // "dev-docs"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run both development servers",
+            "isBackground": true
+        }
+    ]
+}
